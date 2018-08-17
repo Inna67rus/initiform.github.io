@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<title>Test Chat Page</title>
+<head></head>
+<body style="background-color: green;">
+<img src="https://www.superdecoupage.ru/wp-content/uploads/2017/03/1452052483_2.jpg">
+
+<!-- You have to put this piece of JavaScript code into your web page
+Note: Use <!DOCTYPE html> on the page where snippet located for better rendering
+-->
+<link type="text/css" rel="stylesheet" href="https://centseven1.bugfocus.com/clientweb/chat-client-v4/css/form.css">
+<script type="text/javascript">
+    SERVICE_PATTERN_CHAT_CONFIG = {
+        appId: '3d01b76b-067c-469d-9a10-2195fe5b8f8a',
+        apiUrl: 'https://centseven1.bugfocus.com/clientweb/api/v1',
+        tenantUrl: 'example.com',
+        chatPath: 'https://centseven1.bugfocus.com/clientweb/chat-client-v4/'
+
+        /*        
+         // Default customer data, it can be collected on current site's context
+         first_name: '',
+         last_name: '',
+         email: '',
+         phone_number: ''
+ 		*/
+    };
+</script>
+<script src="https://centseven1.bugfocus.com/clientweb/chat-client-v4/js/init.js"></script> 
+ <div class="sp-callback-form" id="sp-callback-form">
+   <label>label</label>
+   <input type="tel" id="sp-callback-Callback phone number" placeholder="Callback phone number" />
+   <input type="tel" id="sp-callback-Phone number " placeholder="Phone number" />
+   <input type="email" id="sp-callback-Email" placeholder="Email" />
+   <input type="text" id="sp-callback-Name" placeholder="Name" />
+   <input type="text" id="sp-callback-Text" placeholder="Text" />
+   <input type="date" id="sp-callback-Date" placeholder="Date" />
+   <textarea id="sp-callback-Multiline text" placeholder="Multiline text" ></textarea>
+   <input type="range" id="sp-callback-Numerical range slider"  min="null" max="null"/>
+   <input type="radio" id="sp-callback-Radio buttons" name="sp-callback-Radio buttons"  value="1" /><label for="sp-callback-Radio buttons">1</label>
+   <input type="radio" id="sp-callback-Radio buttons" name="sp-callback-Radio buttons"  value="2" /><label for="sp-callback-Radio buttons">2</label>
+   <select id="sp-callback-Selection list" placeholder="Selection list" >
+      <option>1</option>
+      <option>2</option>
+   </select>
+   <button id="sp-chat-submit-inline">Chat</button>
+   <button id="sp-callback-submit-inline">Call</button>
+</div>
+
+
+
+</body>
+</html>
