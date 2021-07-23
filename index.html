@@ -3,35 +3,33 @@
 <title>Test Chat Page</title>
 <head></head>
 <body style="background-color: white;">
-<img src="https://www.superdecoupage.ru/wp-content/uploads/2017/03/1452052483_2.jpg">
-
 <!-- You have to put this piece of JavaScript code into your web page
 Note: Use <!DOCTYPE html> on the page where snippet located for better rendering
 -->
 <link type="text/css" rel="stylesheet" href="https://centseven1.bugfocus.com/clientweb/chat-client-v4/css/form.css">
 <script type="text/javascript">
     SERVICE_PATTERN_CHAT_CONFIG = {
-        appId: '3b3def187cbe4dd1aa141ae237566cae',
+        appId: '815aed3da7874434b4b133bc6e10f064',
         apiUrl: 'https://centseven1.bugfocus.com/clientweb/api/v1',
         tenantUrl: 'example.com',
         chatPath: 'https://centseven1.bugfocus.com/clientweb/chat-client-v4/'
-
-        /*        
-         // Default customer data, it can be collected on current site's context
-         first_name: '',
-         last_name: '',
-         email: '',
-         phone_number: ''
- 		*/
     };
 </script>
+
 <script src="https://centseven1.bugfocus.com/clientweb/chat-client-v4/js/init.js"></script> 
  <div class="sp-callback-form" id="sp-callback-form">
-   <input type="tel" id="sp-callback-Phone" placeholder="Phone number" />
-   <input type="tel" id="sp-callback-callback phone number" placeholder="callback phone number" />
-   <button id="sp-chat-submit-inline">Chat</button>
-   <button id="sp-callback-submit-inline">Call</button>
+   <label>Request a callback</label>
+   <label>&nbsp;</label>
+   <label>Name:</label>
+   <input type="text" id="sp-callback-name" placeholder="Name" />
+   <label>Phone:</label>
+   <input type="tel" id="sp-callback-phone_number" placeholder="Phone" />
+   <input type="radio" id="sp-callback-Option 1_1" name="sp-callback-Option 1"  value="1" /><label for="sp-callback-Option 1">1</label>
+   <input type="radio" id="sp-callback-Option 1_2" name="sp-callback-Option 1"  value="2" /><label for="sp-callback-Option 1">2</label>
+   <input type="radio" id="sp-callback-Option 1_3" name="sp-callback-Option 1"  value="3" /><label for="sp-callback-Option 1">3</label>
+   <button id="sp-callback-submit-inline">Request Call</button>
 </div>
+
 
 
 
